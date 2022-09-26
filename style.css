@@ -44,6 +44,7 @@ section:nth-child(even) {
 }
 
 .click {
+  cursor: pointer;
   transition: all 200ms ease;
 }
 
@@ -220,6 +221,24 @@ section:nth-child(even) {
 .info-half {
   width: 50%;
   padding: 40px 72px;
+  position: relative;
+}
+
+.info-exit {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #ffffff;
+  font-size: 36px;
+  z-index: 2;
+}
+
+.about-title, .contact-title {
+  font-size: 26px;
+}
+
+.about-sub, .contact-sub {
+  margin: 12px 0px 24px 0px;
 }
 
 .about {
@@ -227,14 +246,6 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.about-title {
-  font-size: 26px;
-}
-
-.about-sub {
-  margin: 12px 0px 24px 0px;
 }
 
 .about-para {
@@ -280,6 +291,106 @@ section:nth-child(even) {
 .contact {
   background-color: #242424;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-input, .contact-ta {
+  width: 100%;
+  background-color: #242424;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #c0c4cc;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 40px;
+  transition: all 200ms ease;
+}
+
+.contact-input:hover, .contact-ta:hover {
+  border-color: #dcdfe6;
+}
+
+.contact-input:focus, .contact-ta:focus {
+  border-color: #2ebfa0;
+}
+
+.contact-ta {
+  resize: vertical;
+  height: 100px;
+  margin-top: 6px;
+}
+
+.contact-button {
+  background-color: #2ebfa0;
+  border: 2px solid #2ebfa0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 240px;
+  padding: 12px 24px;
+  transition: all 200ms ease;
+}
+
+.contact-button:hover {
+  border-color: #ffffff;
+  background-color: transparent;
+}
+
+.contact-button:active {
+  border-color: #2ebfa0;
+  color: #2ebfa0;
+}
+
+.contact-over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-loading {
+  background-color: #242424;
+  font-size: 80px;
+  z-index: -1;
+}
+
+.contact-success {
+  background-color: #4bb543;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 28px;
+}
+
+.fa-spinner {
+  animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Projects */
