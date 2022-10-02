@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("2hvV9SMMYfDlNPLDE");
+    })();
+  </script>
 </head>
 <body>
   <nav class="nav-bar" >
@@ -84,14 +90,14 @@
       <div class="contact info-half">
         <h3 class="contact-title">Let's have a chat</h3>
         <h4 class="contact-sub">I'm currently open to new opportunities.</h4>
-        <form class="contact-form" action="">
+        <form class="contact-form" onsubmit="contact(event)">
           <div class="contact-item">
             <label class="contact-label">Name</label>
-            <input class="contact-input" name="user-name" type="text" required></input>
+            <input class="contact-input" name="user-name" type="text"></input>
           </div>
           <div class="contact-item">
             <label class="contact-label">Email</label>
-            <input class="contact-input" name="user-email" type="email" required></input>
+            <input class="contact-input" name="user-email" type="email"></input>
           </div>
           <div class="contact-item">
             <label class="contact-label">Message</label>
