@@ -56,7 +56,7 @@
         </a>
       </div>
     </div>
-    <button class="mail-link click">
+    <button class="mail-link click" onclick="openInfo()">
       <i class="fas fa-envelope"></i>
     </button>
     <a href="#projects" class="scroll">
@@ -105,14 +105,14 @@
           </div>
           <button class="contact-button">Submit</button>
         </form>
-        <div class="contact-over contact-loading">
+        <div class="contact-loading contact-over">
           <i class="fas fa-spinner"></i>
         </div>
-        <div class="contact-over contact-success">
+        <div class="contact-success contact-over">
           Thanks for the message! Looking forward to speaking to you soon.
         </div>
+        <i class="info-exit fas fa-times click" onclick="closeInfo()"></i>
       </div>
-      <i class="info-exit fas fa-times click"></i>
     </div>
   </section>
 

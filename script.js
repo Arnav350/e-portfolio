@@ -21,3 +21,14 @@ function contact(event) {
       alert("The email service is temporarily unavailable. Please contact me directly on patelarnavm@gmail.com");
     })
 }
+
+function openInfo() {
+  document.querySelector('.info').classList.add('info-open');
+  document.querySelector('.mail-link').classList.add('back');
+}
+
+function closeInfo() {
+  document.querySelector('.info').classList.remove('info-open');
+  document.querySelector('.mail-link').classList.remove('back');
+  document.querySelector('.contact-success').classList.remove('contact-visible')
+}
