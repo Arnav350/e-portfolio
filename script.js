@@ -23,12 +23,15 @@ function contact(event) {
 }
 
 function openInfo() {
+  document.querySelector('body').classList.add('info-open');
   document.querySelector('.info').classList.add('info-open');
   document.querySelector('.mail-link').classList.add('back');
 }
 
 function closeInfo() {
   document.querySelector('.info').classList.remove('info-open');
+  document.querySelector('body').classList.remove('info-open');
   document.querySelector('.mail-link').classList.remove('back');
   document.querySelector('.contact-success').classList.remove('contact-visible')
+  document.querySelector('.contact-loading').classList.remove('contact-visible')
 }
