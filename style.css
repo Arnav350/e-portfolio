@@ -68,7 +68,7 @@ nav,
 footer {
   opacity: 1;
   visibility: visible;
-  transition: all 600ms 400ms;
+  transition: all 600ms;
 }
 
 .info-open nav,
@@ -79,9 +79,25 @@ footer {
 .info-open footer {
   opacity: 0;
   visibility: hidden;
-  transition: all 400ms 200ms;
+  transition: all 400ms;
 }
 
+.dark-mode .my-logo,
+.dark-mode .nav-a,
+.dark-mode .header-title,
+.dark-mode .header-para,
+.dark-mode .header-link,
+.dark-mode .scroll,
+.dark-mode .mail-link,
+.dark-mode .project-title
+{
+  filter: invert(100%);
+}
+
+.dark-mode section,
+.dark-mode nav {
+  background-color: #242424;
+}
 
 /* Nav Bar */
 
@@ -128,6 +144,11 @@ footer {
 }
 
 .fa-sun {
+  font-size: 20px;
+  color: #242424;
+}
+
+.fa-moon {
   font-size: 20px;
   color: #242424;
 }
@@ -186,7 +207,7 @@ footer {
 }
 
 .mail-link {
-  position: fixed;
+  position: absolute;
   bottom: 28px;
   right: 40px;
   width: 70px;

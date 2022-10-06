@@ -2,6 +2,10 @@
 // 
 // 
 
+function toggleContrast() {
+  document.body.classList.toggle("dark-mode");
+}
+
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector('.contact-loading');
