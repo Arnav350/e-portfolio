@@ -45,7 +45,7 @@ section:nth-child(even) {
 
 .click {
   cursor: pointer;
-  transition: all 200ms ease;
+  transition: transform 200ms ease;
 }
 
 .click:hover {
@@ -61,9 +61,7 @@ section:nth-child(even) {
 }
 
 nav,
-.header,
-.mail-link,
-.scroll,
+.intro,
 .project,
 footer {
   opacity: 1;
@@ -82,20 +80,16 @@ footer {
   transition: opacity 400ms, visibility 400ms;
 }
 
-.nav-bar,
-.header,
-.scroll,
-.mail-link,
-.project-link,
+nav,
 section,
-nav {
-  transition: filter 800ms;
+.nav-bar,
+.intro,
+.project-title {
+  transition: filter 10000ms, background-color 10000ms;
 }
 
 .dark-mode .nav-bar,
-.dark-mode .header,
-.dark-mode .scroll,
-.dark-mode .mail-link,
+.dark-mode .intro,
 .dark-mode .project-title {
   filter: invert(100%);
 }
