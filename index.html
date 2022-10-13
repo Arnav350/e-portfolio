@@ -16,179 +16,185 @@
   </script>
 </head>
 <body>
-  <nav class="nav-bar" >
-    <figure>
-      <img src="./assets/logo.png" alt="" class="my-logo" >
-    </figure>
-    <ul class="nav-list">
-      <li class="nav-link">
-        <a href="#" class="nav-a">About</a>
-      </li>
-      <li class="nav-link">
-        <a href="#" class="nav-a">Projects</a>
-      </li>
-      <li class="nav-link">
-        <a href="#" class="nav-a">Contact</a>
-      </li>
-      <li class="nav-link" onclick="toggleContrast()">
-        <a href="#">
-          <i class="fas fa-sun"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-  <section class="intro">
-    <div class="container header">
-      <h1 class="header-title">Hello</h1>
-      <h1 class="header-title"><span class="secondary">I'm Arnav</span></h1>
-      <p class="header-para">I am a <b class="secondary">Frontend Software Engineer</b> specializing in creating web applications.</p>
-      <p class="header-para">Here's some info <b class=" header-me secondary" onclick="openInfo()">about me.</b></p>
-      <div class="header-list">
-        <a href="https://www.linkedin.com/in/arnav-patel3" target="_blank" class="header-link click">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/Arnav350" target="_blank" class="header-link click">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="#" class="header-link click">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-      </div>
+  <nav>
+    <div class="nav-bar" >
+      <figure>
+        <img src="./assets/logo.png" alt="" class="my-logo" >
+      </figure>
+      <ul class="nav-list">
+        <li class="nav-link">
+          <a href="#" class="nav-a">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="#" class="nav-a">Projects</a>
+        </li>
+        <li class="nav-link">
+          <a href="#" class="nav-a">Contact</a>
+        </li>
+        <li class="nav-link" onclick="toggleContrast()">
+          <a href="#">
+            <i class="fas fa-sun toggle-contrast"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-    <button class="mail-link click" onclick="openInfo()">
-      <i class="fas fa-envelope"></i>
-    </button>
-    <a href="#projects" class="scroll">
-      <div class="scroll-link click"></div>
-    </a>
-    <div class="info">
-      <div class="about info-half">
-        <h3 class="about-title">Here's a bit about me</h3>
-        <h4 class="about-sub">Frontend Software Engineer</h4>
-        <p class="about-para">I am a 17 year old <b class="secondary">frontend software engineer</b> located in The United States and I am dedicated to creating amazing user experiences.</p>
-        <p class="about-para">At this stage I work on x x x and I have skills including y y y and I currently work with a team of talented software engineers.</p>
-        <div class="about-languages">
-          <figure class="about-language">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="info-img">
-          <span class="about-name">HTML</span>
-          </figure>
-          <figure class="about-language">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="" class="info-img">
-          <span class="about-name">CSS</span>
-          </figure>
-          <figure class="about-language">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" class="info-img">
-          <span class="about-name">JavaScript</span>
-          </figure>
-          <figure class="about-language">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="info-img">
-          <span class="about-name">HTML</span>
-          </figure>
+  </nav>
+  
+  <section>
+    <div class="intro">
+      <div class="container header">
+        <h1 class="header-title">Hello</h1>
+        <h1 class="header-title"><span class="secondary">I'm Arnav</span></h1>
+        <p class="header-para">I am a <b class="secondary">Frontend Software Engineer</b> specializing in creating web applications.</p>
+        <p class="header-para">Here's some info <b class=" header-me secondary" onclick="openInfo()">about me.</b></p>
+        <div class="header-list">
+          <a href="https://www.linkedin.com/in/arnav-patel3" target="_blank" class="header-link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Arnav350" target="_blank" class="header-link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="header-link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
         </div>
       </div>
-      <div class="contact info-half">
-        <h3 class="contact-title">Let's have a chat</h3>
-        <h4 class="contact-sub">I'm currently open to new opportunities.</h4>
-        <form class="contact-form" onsubmit="contact(event)">
-          <div class="contact-item">
-            <label class="contact-label">Name</label>
-            <input class="contact-input" name="user-name" type="text"></input>
+      <button class="mail-link click" onclick="openInfo()">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll-link click"></div>
+      </a>
+      <div class="info">
+        <div class="about info-half">
+          <h3 class="about-title">Here's a bit about me</h3>
+          <h4 class="about-sub">Frontend Software Engineer</h4>
+          <p class="about-para">I am a 17 year old <b class="secondary">frontend software engineer</b> located in The United States and I am dedicated to creating amazing user experiences.</p>
+          <p class="about-para">At this stage I work on x x x and I have skills including y y y and I currently work with a team of talented software engineers.</p>
+          <div class="about-languages">
+            <figure class="about-language">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="info-img">
+              <span class="about-name">HTML</span>
+            </figure>
+            <figure class="about-language">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="" class="info-img">
+              <span class="about-name">CSS</span>
+            </figure>
+            <figure class="about-language">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" class="info-img">
+              <span class="about-name">JavaScript</span>
+            </figure>
+            <figure class="about-language">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png?20220125121207" alt="" class="info-img">
+              <span class="about-name">React</span>
+            </figure>
           </div>
-          <div class="contact-item">
-            <label class="contact-label">Email</label>
-            <input class="contact-input" name="user-email" type="email"></input>
-          </div>
-          <div class="contact-item">
-            <label class="contact-label">Message</label>
-            <textarea class="contact-ta" name="user-message" type="text"></textarea>
-          </div>
-          <button class="contact-button">Submit</button>
-        </form>
-        <div class="contact-loading contact-over">
-          <i class="fas fa-spinner"></i>
         </div>
-        <div class="contact-success contact-over">
-          Thanks for the message! Looking forward to speaking to you soon.
+        <div class="contact info-half">
+          <h3 class="contact-title">Let's have a chat</h3>
+          <h4 class="contact-sub">I'm currently open to new opportunities.</h4>
+          <form class="contact-form" onsubmit="contact(event)">
+            <div class="contact-item">
+              <label class="contact-label">Name</label>
+              <input class="contact-input" name="user-name" type="text"></input>
+            </div>
+            <div class="contact-item">
+              <label class="contact-label">Email</label>
+              <input class="contact-input" name="user-email" type="email"></input>
+            </div>
+            <div class="contact-item">
+              <label class="contact-label">Message</label>
+              <textarea class="contact-ta" name="user-message" type="text"></textarea>
+            </div>
+            <button class="contact-button">Submit</button>
+          </form>
+          <div class="contact-loading contact-over">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="contact-success contact-over">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+          <i class="info-exit fas fa-times click" onclick="closeInfo()"></i>
         </div>
-        <i class="info-exit fas fa-times click" onclick="closeInfo()"></i>
       </div>
     </div>
   </section>
 
-  <section class="project">
-    <div class="container">
-      <h1 class="project-title">
-        These are my <span class="secondary">projects</span>
-      </h1>
-      <ul class="project-list">
-        <li class="projects">
-          <div class="projects-wrapper">
-            <figure class="projects-fig">
-              <img src="./assets/projects.png" alt="" class="projects-img">
-            </figure>
-            <div class="projects-description">
-              <h3 class="projects-title">Care Sales Project</h3>
-              <h4 class="projects-subtitle">Html, Css, Javascript</h4>
-              <p class="projects-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta dolores molestiae, sunt voluptatum laudantium quisquam reiciendis enim accusantium natus ullam, explicabo ipsum numquam autem. Aspernatur nam a voluptatibus reiciendis.
-              </p>
-              <div class="projects-links">
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fas fa-link"></i>
-                </a>
+  <section>
+    <div class="project">
+      <div class="container">
+        <h1 class="project-title">
+          These are my <span class="secondary">projects</span>
+        </h1>
+        <ul class="project-list">
+          <li class="projects">
+            <div class="projects-wrapper">
+              <figure class="projects-fig">
+                <img src="./assets/projects.png" alt="" class="projects-img">
+              </figure>
+              <div class="projects-description">
+                <h3 class="projects-title">Care Sales Project</h3>
+                <h4 class="projects-subtitle">Html, Css, Javascript</h4>
+                <p class="projects-para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta dolores molestiae, sunt voluptatum laudantium quisquam reiciendis enim accusantium natus ullam, explicabo ipsum numquam autem. Aspernatur nam a voluptatibus reiciendis.
+                </p>
+                <div class="projects-links">
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li class="projects">
-          <div class="projects-wrapper">
-            <figure class="projects-fig">
-              <img src="./assets/projects.png" alt="" class="projects-img">
-            </figure>
-            <div class="projects-description">
-              <h3 class="projects-title">Care Sales Project</h3>
-              <h4 class="projects-subtitle">Html, Css, Javascript</h4>
-              <p class="projects-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta dolores molestiae, sunt voluptatum laudantium quisquam reiciendis enim accusantium natus ullam, explicabo ipsum numquam autem. Aspernatur nam a voluptatibus reiciendis.
-              </p>
-              <div class="projects-links">
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fas fa-link"></i>
-                </a>
+          </li>
+          <li class="projects">
+            <div class="projects-wrapper">
+              <figure class="projects-fig">
+                <img src="./assets/projects.png" alt="" class="projects-img">
+              </figure>
+              <div class="projects-description">
+                <h3 class="projects-title">Care Sales Project</h3>
+                <h4 class="projects-subtitle">Html, Css, Javascript</h4>
+                <p class="projects-para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta dolores molestiae, sunt voluptatum laudantium quisquam reiciendis enim accusantium natus ullam, explicabo ipsum numquam autem. Aspernatur nam a voluptatibus reiciendis.
+                </p>
+                <div class="projects-links">
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li class="projects">
-          <div class="projects-wrapper">
-            <figure class="projects-fig">
-              <img src="./assets/projects.png" alt="" class="projects-img">
-            </figure>
-            <div class="projects-description">
-              <h3 class="projects-title">Care Sales Project</h3>
-              <h4 class="projects-subtitle">Html, Css, Javascript</h4>
-              <p class="projects-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta dolores molestiae, sunt voluptatum laudantium quisquam reiciendis enim accusantium natus ullam, explicabo ipsum numquam autem. Aspernatur nam a voluptatibus reiciendis.
-              </p>
-              <div class="projects-links">
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fas fa-link"></i>
-                </a>
+          </li>
+          <li class="projects">
+            <div class="projects-wrapper">
+              <figure class="projects-fig">
+                <img src="./assets/projects.png" alt="" class="projects-img">
+              </figure>
+              <div class="projects-description">
+                <h3 class="projects-title">Care Sales Project</h3>
+                <h4 class="projects-subtitle">Html, Css, Javascript</h4>
+                <p class="projects-para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta dolores molestiae, sunt voluptatum laudantium quisquam reiciendis enim accusantium natus ullam, explicabo ipsum numquam autem. Aspernatur nam a voluptatibus reiciendis.
+                </p>
+                <div class="projects-links">
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 

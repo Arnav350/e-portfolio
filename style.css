@@ -68,7 +68,7 @@ nav,
 footer {
   opacity: 1;
   visibility: visible;
-  transition: all 600ms;
+  transition: opacity 600ms 200ms, visibility 600ms 200ms;
 }
 
 .info-open nav,
@@ -79,18 +79,24 @@ footer {
 .info-open footer {
   opacity: 0;
   visibility: hidden;
-  transition: all 400ms;
+  transition: opacity 400ms, visibility 400ms;
 }
 
-.dark-mode .my-logo,
-.dark-mode .nav-a,
-.dark-mode .header-title,
-.dark-mode .header-para,
-.dark-mode .header-link,
+.nav-bar,
+.header,
+.scroll,
+.mail-link,
+.project-link,
+section,
+nav {
+  transition: filter 800ms;
+}
+
+.dark-mode .nav-bar,
+.dark-mode .header,
 .dark-mode .scroll,
 .dark-mode .mail-link,
-.dark-mode .project-title
-{
+.dark-mode .project-title {
   filter: invert(100%);
 }
 
@@ -139,7 +145,7 @@ footer {
   transition: all 200ms ease;
 }
 
-.nav-a:hover::after{
+.nav-a:hover::after {
   transform: scale(1);
 }
 
@@ -249,6 +255,7 @@ footer {
   0% {
     transform: translateY(3px);
   }
+
   100% {
     transform: translateY(-3px);
   }
@@ -271,7 +278,7 @@ footer {
   transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 
-.info-open{
+.info-open {
   z-index: 1;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
   visibility: visible;
@@ -280,7 +287,7 @@ footer {
 .info-half {
   width: 50%;
   padding: 40px 72px;
-  position: relative; 
+  position: relative;
 }
 
 .info-exit {
@@ -292,11 +299,13 @@ footer {
   z-index: 2;
 }
 
-.about-title, .contact-title {
+.about-title,
+.contact-title {
   font-size: 26px;
 }
 
-.about-sub, .contact-sub {
+.about-sub,
+.contact-sub {
   margin: 12px 0px 24px 0px;
 }
 
@@ -347,7 +356,7 @@ footer {
   transition: all 200ms ease;
 }
 
-.about-language:hover .about-name{
+.about-language:hover .about-name {
   transform: scale(1);
 }
 
@@ -374,7 +383,8 @@ footer {
   font-weight: bold;
 }
 
-.contact-input, .contact-ta {
+.contact-input,
+.contact-ta {
   width: 100%;
   background-color: #242424;
   color: #ffffff;
@@ -387,11 +397,13 @@ footer {
   transition: all 200ms ease;
 }
 
-.contact-input:hover, .contact-ta:hover {
+.contact-input:hover,
+.contact-ta:hover {
   border-color: #dcdfe6;
 }
 
-.contact-input:focus, .contact-ta:focus {
+.contact-input:focus,
+.contact-ta:focus {
   border-color: #2ebfa0;
 }
 
@@ -558,6 +570,6 @@ footer {
   transition: all 200ms ease;
 }
 
-.footer-link:hover::after{
+.footer-link:hover::after {
   transform: scale(1);
 }
