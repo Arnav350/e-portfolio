@@ -83,13 +83,17 @@ footer {
 nav,
 section,
 .nav-bar,
-.intro,
+.header,
+.mail-link,
+.scroll,
 .project-title {
-  transition: filter 10000ms, background-color 10000ms;
+  transition: filter 1000ms, background-color 1000ms;
 }
 
 .dark-mode .nav-bar,
-.dark-mode .intro,
+.dark-mode .header,
+.dark-mode .mail-link,
+.dark-mode .scroll,
 .dark-mode .project-title {
   filter: invert(100%);
 }
